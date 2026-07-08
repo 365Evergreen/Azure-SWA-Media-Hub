@@ -1,0 +1,20 @@
+{
+  "name": "azure-swa-media-hub-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Azure Functions API for Media Hub – lists blobs and generates SAS URLs",
+  "main": "media/index.js",
+  "scripts": {
+    "start": "func start",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --testPathPattern=api"
+  },
+  "dependencies": {
+    "@azure/storage-blob": "^12.27.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
